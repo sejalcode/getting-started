@@ -1,0 +1,130 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+header {
+   position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    z-index: 999;
+}
+   
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 100px;
+}
+
+#home {
+    position: relative;
+    background: url('https://img.lovepik.com/photo/48013/0594.jpg_wh300.jpg'); /* fit background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 0 2rem;
+    z-index: 1;
+}
+
+#home::before {
+    /* content: ''; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: appear 1s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(2, 10, 101, 0.6);
+}
+.home-content p{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+}
+.home-content a {
+    background-color: rgb(255, 166, 166);
+    font-size: 1rem;
+    margin: 1 rem;
+    padding: 0 1rem;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    margin: 3rem;
+
+}
+.featured {
+    background-color: rgb(213, 244, 230);
+    text-align: center;
+    /* fit image and image size */
+}
+/* need more understanding */
+.featured h1::after {
+    content: ''; /*?*/
+    width: 100px;
+    height: 4px;
+    background: rgb(39, 142, 16);
+    display: block;
+    margin: 1rem auto 0;
+}
+.featured h1 {
+    padding:2rem ;
+}
+.blog-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block {
+    display: flex;
+}
+.he h1{
+    text-align: center;
+    margin: 1rem auto 0;
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #000;
+}
+footer {
+    background-color: rgb(213, 210, 210);
+    padding: 2rem;
+}
+footer .footer-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+}
